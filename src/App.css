@@ -1,18 +1,35 @@
+:root {
+  --color-black: #1b1b1b;
+  --color-grey-background: #e3e3ec;
+  --color-white: #fff;
+  --color-background: #f6f6f6;
+  --color-grey: #bebebe;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
 
-  background-color: #e3e3ec;
+  background-color: var(--color-grey-background);
   display: flex;
   align-items: center;
   justify-content: center;
 
   width: 100vw;
   height: 100vh;
+
+  box-sizing: border-box;
+
+  font-family: "Red Hat Display", sans-serif;
 }
 
 #root {
-  background-color: #fafafa;
+  background-color: var(--color-white);
   box-sizing: border-box;
   overflow: hidden;
 
@@ -27,15 +44,4 @@ body {
     width: 480px;
     height: 844px;
   }
-}
-
-.app {
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(transparent, #fafafa 60%),
-    url(https://cdn.pixabay.com/photo/2016/11/29/03/53/house-1867187_960_720.jpg);
-  background-position: center;
-  background-position: top;
-  background-size: 160%;
-  background-repeat: no-repeat;
 }
